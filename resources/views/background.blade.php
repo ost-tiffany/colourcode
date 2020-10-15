@@ -25,13 +25,14 @@
 @section('content')
 	
 	<div class="uk-flex uk-flex-column">
-        <h3>バックグラウンドカラー使い方　：</h3>
+        <h3 class="uk-heading-divider">バックグラウンドカラー</h3>
 
-        <ul class="uk-list uk-list-disc uk-list-muted">
-            <li>以下のカラーから選んで</li>
-            <li>お好きなカラーの名前はクラスの名前</li> <br>
+        <ul class="uk-list uk-list-disc uk-list-muted"> 
+        	<h4> 使い方　： </h4>
+            <li>以下のカラーパレッドから好きな色を選んでください</li>
+            <li>選んだカラー名はクラス名として使用します</li> <br>
             <li>
-            	<code>class</code> で入れてください
+            	<code>class</code> に入れて使用してください。
             	<br>
        		
         		<strong>例</strong>　：  紫の"plum" クラス
@@ -49,9 +50,9 @@
 
        		</li> <br>
        		<li> 
-       			文字の色も変化できます。<a href="{{route('text')}}"> ここで選べます。</a>
+       			文字の色も変化できます。<a href="{{route('text')}}"> ここから選べます。</a>
        			<br>
-       			<strong>例</strong>　：  赤の"crimson" クラス と　モノクロムの"text-white"文字
+       			<strong>例</strong>　：  レッドの"crimson" クラス と　モノクロムの"text-white"文字
         		<br>
         		<code>
         			&lt;div class='crimson text-white'&gt; これは "crimson" と "text-white" 文字 のクラスです　&lt;/div&gt;
@@ -69,8 +70,8 @@
 
     </div>
 
+    <h3 class="uk-heading-divider paddingtop">カラー</h3>
 	<div class="uk-flex uk-flex-center">
-
 		<div class="uk-width-3-5@m uk-width-2-3@l">
 			<div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
 			    <div>
@@ -102,7 +103,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">赤</h3>
+			            <h3 class="uk-card-title">レッド</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <div class='textright box orange-red'>
 			            			<span>orange-red</span>
@@ -169,7 +170,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">黄色</h3>
+			            <h3 class="uk-card-title">イエロー</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <div class='textright box pale-gold'>
 			            			<span class="text-gray">pale-gold</span>
@@ -247,7 +248,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">青</h3>
+			            <h3 class="uk-card-title">ブルー</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <div class='textright box aqua'>
 			            			<span class="text-gray">aqua</span>
@@ -294,7 +295,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">紫</h3>
+			            <h3 class="uk-card-title">パープル</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <div class='textright box thistle'>
 			            			<span>thistle</span>
@@ -329,7 +330,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">緑</h3>
+			            <h3 class="uk-card-title">グリーン</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <div class='textright box light-leaf'>
 			            			<span class="text-gray">light-leaf</span>

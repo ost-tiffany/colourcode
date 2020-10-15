@@ -12,6 +12,12 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/color.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/text.css')}}">
 
+    <style type="text/css">
+        .paddingtop {
+            padding-top: 50px;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -24,12 +30,11 @@
                     <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                          <li><a href="{{route('document')}}">ドキュメント</a></li>
-                        <li><a href="{{route('background')}}">カラー</a></li>
+                        <li><a href="{{route('background')}}">バックグラウンド</a></li>
                         <li><a href="{{route('text')}}">テキスト</a></li>
                     </ul>
                 </div>
                 </li>
-                <li><a href="{{route('sample')}}">サンプル</a></li>
             </ul>
         </div>
     </nav>

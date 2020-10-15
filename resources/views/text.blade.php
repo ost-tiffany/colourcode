@@ -2,21 +2,29 @@
 
 @section('title')
 	<title> テキスト </title>
+	<style type="text/css">
+		.box {
+			width: 450px;
+			height: 150px;
+			padding: 10px;
+		}
+	</style>
 @endsection
 
 @section('content')
 
 	<div class="uk-flex uk-flex-column">
-        <h3>バックグラウンドカラー使い方　：</h3>
+        <h3 class="uk-heading-divider">テキストカラー</h3>
 
         <ul class="uk-list uk-list-disc uk-list-muted">
-            <li>以下のカラーから選んで</li>
-            <li>お好きなカラーの名前はクラスの名前</li> <br>
+        	<h4>使い方　：</h4>
+            <li>以下のカラーパレッドから好きな色を選んでください</li>
+            <li>選んだカラー名はクラス名として使用します</li> <br>
             <li>
-            	<code>class</code> で入れてください
+            	<code>class</code> に入れて使用してください。
             	<br>
        		
-        		<strong>例</strong>　：  赤の"brick" クラス
+        		<strong>例</strong>　：  レッドの"brick" クラス
         		<br>
         		<code>
         			&lt;span class='text-brick'&gt; これは "text-brick" のクラスです　&lt;/span&gt;
@@ -32,8 +40,50 @@
     	</ul>
     </div>
 
-    <div class="uk-flex uk-flex-center">
 
+    <br>
+    <br>
+    <h3 class="uk-heading-divider paddingtop">テキストの整列</h3>
+
+   	<div uk-grid>
+	    <div>
+	        <div class="uk-width-1-2">
+	        	<h3 class="uk-card-title">左揃え</h3>
+	        	<div class="box text-left light-beige">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+				</div>
+	        </div>
+	    </div>
+	    <div>
+	        <div class="uk-width-1-2">
+	        	<h3 class="uk-card-title">中央揃え</h3>
+	        	<div class="box text-center light-beige">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+				</div>
+	        </div>
+	    </div>
+	    <div>
+	        <div class="uk-width-1-2">
+	        	<h3 class="uk-card-title">右揃え</h3>
+			    <div class="box text-right light-beige">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+				</div>
+	        </div>
+	    </div>
+	    <div>
+	        <div class="uk-width-1-2">
+	        	<h3 class="uk-card-title">両端揃え</h3>
+	        	<div class="box text-justify light-beige">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+				</div>
+	        </div>
+	    </div>
+	</div>
+
+
+    <h3 class="uk-heading-divider paddingtop">カラー</h3>
+		
+    <div class="uk-flex uk-flex-center">
 		<div class="uk-width-3-5@m uk-width-2-3@l">
 			<div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
 			    <div>
@@ -65,7 +115,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">赤</h3>
+			            <h3 class="uk-card-title">レッド</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <span class='text-orange-red'>
 			            			text-orange-red
@@ -132,7 +182,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">黄色</h3>
+			            <h3 class="uk-card-title">イエロー</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <span class='text-pale-gold'>
 			            			text-pale-gold
@@ -210,7 +260,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">青</h3>
+			            <h3 class="uk-card-title">ブルー</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <span class='text-aqua'>
 			            			text-aqua
@@ -257,7 +307,7 @@
 			    </div>
 			    <div>
 			        <div class="uk-card uk-card-hover uk-card-body">
-			            <h3 class="uk-card-title">紫</h3>
+			            <h3 class="uk-card-title">パープル</h3>
 			            <ul class="uk-list uk-list-square">
 			            	<li> <span class='text-thistle'>
 			            			text-thistle

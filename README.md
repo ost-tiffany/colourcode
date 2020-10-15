@@ -12,7 +12,3 @@ CSS framework for developing websites
 background color
 text color
 ```
-
-## Start
-
-click [here](https://github.com/ost-tiffany/libraryCSS/blob/master/resources/views/index.blade.php) to start browsing

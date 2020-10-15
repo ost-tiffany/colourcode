@@ -17,8 +17,11 @@ Route::get('/', function () {return view('index'); })->name('index');
 Route::get('/product/document', function () {return view('document'); })->name('document');
 Route::get('/product/background', function () {return view('background'); })->name('background');
 Route::get('/product/text', function () {return view('text'); })->name('text');
-Route::get('/sample', function () {return view('sample'); })->name('sample');
+//Route::get('/sample', function () {return view('sample'); })->name('sample');
 
 // css
 Route::get('/css/color.css', function () {return asset('css/color.css'); })->name('colorfile');
 Route::get('/css/text.css', function () {return asset('css/text.css'); })->name('textfile');
+
+//Zip
+Route::get('/download', 'ZipController@export')->name('download');
